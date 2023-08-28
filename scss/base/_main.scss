@@ -1,0 +1,67 @@
+.container {
+    max-width: $width-var + 30px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+p, span, a, li, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lab Grotesque';
+}
+
+.body{
+    font-family: 'Lab Grotesque';
+    background-color: $bg-color;
+    color: $font-color;
+}
+
+html{
+    font-size: 10px;
+}
+
+p.title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: $font-color;
+    }
+
+p.title--secondary {
+    color: $font-secondary;
+}
+
+h1{
+    font-size: 7.2rem;
+    font-weight: 500;
+    line-height: 7.2rem;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    color: $font-color;
+}
+
+h2.title--white {
+    color: #fff;
+}
+
+// Button
+
+.button {
+    display: inline-block;
+    padding: 21px 0;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Lab Grotesque';
+    width: 280px;
+}
+
+.button.button--secondary {
+    background-color: $secondary-color;
+    color: #fff;
+}

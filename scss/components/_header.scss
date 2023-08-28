@@ -1,0 +1,29 @@
+.header {
+    @include bg-image('../img/bg-header.jpg', #10151F);
+    color: #fff;
+
+    padding: 32px 0 120px 0;
+
+    &__blocks{
+        @extend %flex;
+        gap: 30px;
+    }
+    &__text{
+        max-width: 870px;
+    }
+    &__request{
+       @extend %flex;
+       flex-direction: column;
+       gap: 80px;
+       align-items: flex-end;
+    }
+    p.description{
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 18px;
+        line-height: 2.5rem;
+    }
+    .main-title {
+        margin: 16px 0 20px 0;
+    }
+}
+

@@ -1,0 +1,365 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.container {
+  max-width: 1210px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+p, span, a, li, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lab Grotesque";
+}
+
+.body {
+  font-family: "Lab Grotesque";
+  background-color: #fff;
+  color: #222733;
+}
+
+html {
+  font-size: 10px;
+}
+
+p.title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: #222733;
+}
+
+p.title--secondary {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+  font-size: 7.2rem;
+  font-weight: 500;
+  line-height: 7.2rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  color: #222733;
+}
+
+h2.title--white {
+  color: #fff;
+}
+
+.button {
+  display: inline-block;
+  padding: 21px 0;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: "Lab Grotesque";
+  width: 280px;
+}
+
+.button.button--secondary {
+  background-color: #222733;
+  color: #fff;
+}
+
+.about__stat, .about__description, .header__request, .header__blocks, .nav__main ul, .nav__main, .nav__top {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  font-size: 1.4rem;
+  margin-bottom: 280px;
+}
+.nav__top {
+  margin-bottom: 1.6rem;
+  justify-content: space-between;
+}
+.nav__main {
+  justify-content: space-between;
+}
+.nav__main ul li:not(:last-child) {
+  margin-right: 4rem;
+}
+.nav__main ul li {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.nav address {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.link-element {
+  vertical-align: middle;
+  margin-left: 0.8rem;
+}
+
+.phone-number {
+  margin-right: 2rem;
+}
+
+.header {
+  background-image: url("../img/bg-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #10151F;
+  color: #fff;
+  padding: 32px 0 120px 0;
+}
+.header__blocks {
+  gap: 30px;
+}
+.header__text {
+  max-width: 870px;
+}
+.header__request {
+  flex-direction: column;
+  gap: 80px;
+  align-items: flex-end;
+}
+.header p.description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  line-height: 2.5rem;
+}
+.header .main-title {
+  margin: 16px 0 20px 0;
+}
+
+.about {
+  margin: 140px 0;
+}
+.about .title {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.about .container {
+  position: relative;
+}
+.about__text-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.about__text {
+  max-width: 870px;
+  margin-bottom: 80px;
+}
+.about__description {
+  gap: 8rem;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+.about__description p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  text-align: left;
+}
+.about__left, .about__right {
+  max-width: 400px;
+}
+.about__stat {
+  justify-content: space-between;
+}
+.about__block {
+  max-width: 180px;
+}
+.about__block span:nth-child(1) {
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 5.3rem;
+  vertical-align: middle;
+  margin-right: 1.6rem;
+}
+.about__block span:nth-child(2) {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 4.4rem;
+  color: #545E76;
+  vertical-align: middle;
+}
+.about__block p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.2rem;
+  text-align: left;
+}
+
+.services {
+  padding-top: 120px;
+  margin-bottom: 370px;
+  position: relative;
+  height: 676px;
+  background-image: url("../img/services-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #121925;
+}
+.services .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.services h2 {
+  margin-bottom: 20px;
+}
+.services__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.services__description {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+  text-align: left;
+  color: #fff;
+}
+.services__text {
+  max-width: 870px;
+}
+
+.menu {
+  position: absolute;
+  background-color: #fff;
+  bottom: -25%;
+  margin-right: 15px;
+  box-shadow: 0 24px 60px 1px rgba(0, 0, 0, 0.12);
+}
+
+.drinks {
+  display: flex;
+  align-items: center;
+  max-width: 1180px;
+  width: 100%;
+  justify-content: space-between;
+}
+.drinks__description {
+  padding: 20px 68px;
+  max-width: 344px;
+  box-sizing: content-box;
+}
+.drinks__title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4.2rem;
+  margin-bottom: 16px;
+}
+.drinks__cost {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #999999;
+  margin-bottom: 48px;
+}
+.drinks__text {
+  font-weight: 300;
+  line-height: 22px;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+.drinks__buttons button:nth-child(1) {
+  margin-right: 8px;
+}
+.drinks__image {
+  max-width: 700px;
+  height: auto;
+  min-width: 502px;
+}

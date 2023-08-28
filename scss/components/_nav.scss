@@ -1,0 +1,39 @@
+.nav {
+    font-size: 1.4rem;
+    margin-bottom: 280px;
+    &__top {
+        margin-bottom: 1.6rem;
+        @extend %flex;
+        justify-content: space-between;
+    }
+    &__main {
+        @extend %flex;
+        justify-content: space-between;
+        ul {
+            @extend %flex;
+            li:not(:last-child){
+                margin-right: 4rem;
+            }
+            li{
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+        }
+    }
+    &__line{
+       
+    }
+    &__link{
+
+    }
+    address{
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+.link-element {
+    vertical-align: middle;
+    margin-left: .8rem;
+}
+.phone-number {
+    margin-right: 2rem;
+}

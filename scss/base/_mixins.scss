@@ -1,0 +1,12 @@
+@mixin flex{
+    display: flex;
+    align-items: center;
+}
+
+@mixin bg-image($image-path, $bg-color) {
+    background-image: url($image-path);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $bg-color;
+}
