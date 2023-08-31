@@ -1,0 +1,48 @@
+.advantages {
+    margin: 140px 0;
+
+
+    h2 {
+        margin-bottom: 9%;
+    }
+
+    &__block{
+        max-width: 880px;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__card {
+        width: 43.2%;
+        font-family: Lab Grotesque;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+
+        margin-bottom: 7.7%;
+
+        img {
+            margin-bottom: 20px;
+        }
+    }
+    &__wrapper {
+        position: relative;
+        
+        display: flex;
+        justify-content: flex-end;
+
+    .title {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.container {
+}
+
+}
+.title {
+}

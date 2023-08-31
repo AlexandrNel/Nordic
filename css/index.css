@@ -481,3 +481,39 @@ h2.title--white {
   bottom: 8.333%;
   left: 4.16%;
 }
+
+.advantages {
+  margin: 140px 0;
+}
+.advantages h2 {
+  margin-bottom: 9%;
+}
+.advantages__block {
+  max-width: 880px;
+}
+.advantages__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.advantages__card {
+  width: 43.2%;
+  font-family: Lab Grotesque;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 7.7%;
+}
+.advantages__card img {
+  margin-bottom: 20px;
+}
+.advantages__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.advantages__wrapper .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
