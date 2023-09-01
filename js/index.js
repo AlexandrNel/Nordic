@@ -35,20 +35,20 @@ const swiper = new Swiper('.swiper', {
     document.querySelector('#slider-slide2 .slider__image').classList.remove("slider__image--border")
   })
  
-  slider_slide2.addEventListener('mouseover', function(){     
+  slider_slide3.addEventListener('mouseover', function(){     
   document.querySelector('#slider-slide3 .slider__text').classList.add("slider__text--margin")
   document.querySelector('#slider-slide3 .slider__image').classList.add("slider__image--border")
   }) 
-  slider_slide2.addEventListener('mouseout', function(){
+  slider_slide3.addEventListener('mouseout', function(){
     document.querySelector('#slider-slide3 .slider__text').classList.remove("slider__text--margin")
     document.querySelector('#slider-slide3 .slider__image').classList.remove("slider__image--border")
   })
  
-  slider_slide2.addEventListener('mouseover', function(){     
+  slider_slide4.addEventListener('mouseover', function(){     
   document.querySelector('#slider-slide4 .slider__text').classList.add("slider__text--margin")
   document.querySelector('#slider-slide4 .slider__image').classList.add("slider__image--border")
   }) 
-  slider_slide2.addEventListener('mouseout', function(){
+  slider_slide4.addEventListener('mouseout', function(){
     document.querySelector('#slider-slide4 .slider__text').classList.remove("slider__text--margin")
     document.querySelector('#slider-slide4 .slider__image').classList.remove("slider__image--border")
   })
