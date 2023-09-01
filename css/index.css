@@ -539,6 +539,9 @@ h2.title--white {
   flex-wrap: nowrap;
   align-items: flex-start;
 }
+.klients #slider-slide4 {
+  max-width: 480px;
+}
 .klients .slider-slide {
   flex-shrink: 0;
   transition: all 0.2s ease-in-out;
