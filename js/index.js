@@ -9,3 +9,29 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     }
   });
+  
+
+  const slider_slide1 = document.getElementById('slider-slide1')
+  const slider_slide2 = document.getElementById('slider-slide2')
+  const slider_slide3 = document.getElementById('slider-slide3')
+  const slider_slide4 = document.getElementById('slider-slide4')
+
+  slider_slide1.addEventListener('mouseover', function(){     
+  document.querySelector('#slider-slide1 .slider__text').classList.add("slider__text--margin")
+  document.querySelector('#slider-slide1 .slider__image').classList.add("slider__image--border")
+  }) 
+  slider_slide1.addEventListener('mouseout', function(){
+    document.querySelector('#slider-slide1 .slider__text').classList.remove("slider__text--margin")
+    document.querySelector('#slider-slide1 .slider__image').classList.remove("slider__image--border")
+  })
+ 
+
+  slider_slide2.addEventListener('mouseover', function(){     
+  document.querySelector('#slider-slide2 .slider__text').classList.add("slider__text--margin")
+  document.querySelector('#slider-slide2 .slider__image').classList.add("slider__image--border")
+  }) 
+  slider_slide2.addEventListener('mouseout', function(){
+    document.querySelector('#slider-slide2 .slider__text').classList.remove("slider__text--margin")
+    document.querySelector('#slider-slide2 .slider__image').classList.remove("slider__image--border")
+  })
+ 

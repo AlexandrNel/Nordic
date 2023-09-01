@@ -33,26 +33,31 @@
     &__text {
         max-width: 870px;
     }
-}
-.swiper {
-    position: relative;
-    background-color: #fff;
-    bottom: -25%;
 
-    box-shadow: 0 24px 60px 1px rgba(0, 0, 0, 0.12);
-    max-width: 1180px;
-    width: 100%;
-}
-.swiper-slide{
-    position: static;
-}
-.swiper-wrapper{
-    position: static;
-    display: flex;
-    align-items: center;
-    max-width: 1180px;
-    width: 100%;
-    justify-content: space-between;
+
+    .swiper {
+        position: relative;
+        background-color: #fff;
+        bottom: -25%;
+    
+        box-shadow: 0 24px 60px 1px rgba(0, 0, 0, 0.12);
+        max-width: 1180px;
+        width: 100%;
+    
+    .swiper-slide{
+        position: static;
+    }
+
+    .swiper-wrapper{
+        position: static;
+        display: flex;
+        align-items: center;
+        max-width: 1180px;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+    }
 }
 .drinks{
     display: flex;

@@ -1,0 +1,68 @@
+.media-about-us {
+    padding: 140px 0;
+    width: 100%;
+    height: 741px;
+    color: #fff;
+
+    @include bg-image ('../img/bg-about.jpg', #494447);
+
+
+    &__text{
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 48px;
+
+        margin-bottom: 10%;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        
+
+        
+    }
+    &__buttons {
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+    }
+    p.title{
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #fff;
+    }
+    .swiper {
+        position: relative;
+        width: 880px;
+        height: auto;
+        margin: 0;
+
+        &-wrapper {
+            position: static;
+            
+        }
+        &-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            >img {
+                margin-bottom: 40px;
+            }
+        }
+        .swiper-button-prev {
+            position: static;
+        }
+        .swiper-button-next {
+            position: static;
+        }
+    }
+}
+
+.media-logo {
+    font-size: 50px;
+    font-weight: bold;
+}
