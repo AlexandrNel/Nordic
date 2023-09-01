@@ -563,7 +563,7 @@ h2.title--white {
 }
 .klients .klients__wrappper-swiper img {
   margin-bottom: 32px;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .klients .klients__wrappper-swiper p > time {
   font-size: 18px;
