@@ -45,8 +45,8 @@
     </header>
     <section class="about">
         <div class="container">
-            <p class="title">О нас</p>
             <div class="about__text-wrapper">
+                <p class="title">О нас</p>
                <div class="about__text">
                 <h2>Мы поможем сделать ваше мероприятие особенным, чтобы ваши гости запомнили праздник надолго.</h2>
                 <div class="about__description">
@@ -302,7 +302,25 @@
     </section>
     <section class="feedback">
         <div class="container">
+            <div class="feedback__btns"></div>
+            <div class="feedback__form">
+                <form action="">
+                    <h3 class="feedback__form-title">Расскажите о мероприятии</h3>
+                    <div class="feedback__event-format">
+                        <p>Выберите формат мероприятия: </p>
+                        <div>
+                            <button type="button">Фуршет</button>
+                        </div>
+                    </div>  
+                    <div>
+                        <input type="range" id="number-of-persons" name="number-of-persons" min="10" max="100" />
+                        <label for="number-of-persons">Количество гостей</label>
+                      </div>
+                      
+                </form>
+            </div>
             
+
         </div>
     </section>
     <script src="swiper/swiper-bundle.min.js"></script>

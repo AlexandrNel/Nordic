@@ -233,17 +233,12 @@ h2.title--white {
 .about {
   margin: 140px 0;
 }
-.about .title {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 .about .container {
   position: relative;
 }
 .about__text-wrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .about__text {
   max-width: 870px;
@@ -301,18 +296,13 @@ h2.title--white {
   background-size: cover;
   background-color: #121925;
 }
-.services .title {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 .services h2 {
   margin-bottom: 20px;
 }
 .services__wrapper {
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-bottom: 120px;
 }
 .services__description {

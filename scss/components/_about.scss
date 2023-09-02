@@ -1,17 +1,11 @@
 .about {
     margin: 140px 0;
-    .title{
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-
     .container {
         position: relative;
     }
     &__text-wrapper {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
     &__text {
         max-width: 870px;
