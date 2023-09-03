@@ -302,25 +302,79 @@
     </section>
     <section class="feedback">
         <div class="container">
-            <div class="feedback__btns"></div>
+            <div class="feedback__dots"></div>
             <div class="feedback__form">
                 <form action="">
-                    <h3 class="feedback__form-title">Расскажите о мероприятии</h3>
-                    <div class="feedback__event-format">
-                        <p>Выберите формат мероприятия: </p>
-                        <div>
-                            <button type="button">Фуршет</button>
+                    <div id="feedback-form-first-block">
+                        <h3 class="feedback__form-title">Расскажите о мероприятии</h3>
+                            
+                        <div class="feedback__form-wrapper">
+
+
+                            <div class="feedback-form-first-block">
+                                <div class="feedback__event-format">
+                                    <p>Выберите формат мероприятия: </p>
+        
+                                    <div class="feedback__event-format-buttons">
+                                        <button type="button" id="buffet" class="button--secondary">Фуршет</button>
+                                        <button type="button" id="gastronomic-dinner">Гастрономический ужин</button>
+                                        <button type="button" id="banquet">Банкет</button>
+                                    </div>
+                                </div>  
+                                <div class="range-input__wrapper">
+                                    <div class="range-input input">
+                                    <ul>
+                                        <li><p>Количество гостей</p></li>
+                                        <li><p><b><span id="value-number-of-persons">20</span> человек</p></b></li>
+                                    </ul>
+                                    <input type="range" id="number-of-persons" name="number-of-persons" value="20" min="10" max="100" />
+                                </div>
+                                <div class="range-input__wrapper__line"><p>от 10 человек</p><p>до 100 человек</p></div>
+                                
+                                </div>
+                                
+        
+                                <div class="input">
+                                    <ul>
+                                        <li><label for="date">Дата мероприятия:</label></li>
+                                        <li> <input type="date"  name="date" id="date"></li>
+                                    </ul>
+                                </div>
+                                <div class="input">
+                                    <ul>
+                                        <li><label for="additional-services">Дополнитеьлные услуги:</label></li>
+                                        <li><select name="additional-services" id="additional-services">
+                                            <option value="">Тематические станции</option>
+                                            <option value="">Декор</option>
+                                        </select></li>
+                                    </ul>
+                                </div>
+                                <input type="text" class="input" placeholder="Напишите пожелания по меню">
+                                <div class="feedback_button">
+                                    <button class="button button--secondary" type="button" id="feedback_btn">Продолжить</button>
+                                    <p>Нажимая кнопку вы соглашаетесь с <a href="#!">условиями обработки персональных данных</a> и <a href="#!">политикой конфиденциальности</a> </p>
+                                </div>
+                            </div>
+
+                            <div class="feedback__price">
+                                <span>Примерная стоимость:</span>
+                                <div class="feedback__price-first-block">
+                                    <p><span id="price-of-event">150 000</span> ₽</p>
+                                    <span>5 000 ₽/чел</span>
+                                </div>
+                                <div class="feedback__price-second-block">
+                                    <ul>
+                                        <li>Формат:<span  id="format-of-event">Фуршет</span></li>
+                                        <li>Количество гостей:<span  id="guest-number-of-event">30</span></li>
+                                        <li>Дата:<span  id="date-of-event">20.04.23</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
-                    </div>  
-                    <div>
-                        <input type="range" id="number-of-persons" name="number-of-persons" min="10" max="100" />
-                        <label for="number-of-persons">Количество гостей</label>
-                      </div>
-                      
+                    </div>
                 </form>
             </div>
-            
-
         </div>
     </section>
     <script src="swiper/swiper-bundle.min.js"></script>

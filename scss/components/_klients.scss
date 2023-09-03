@@ -5,11 +5,6 @@
 
     background-color: #F3F5F8;
 
-    .title {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
     .slider {
         overflow: hidden;
         position: absolute;
@@ -83,7 +78,7 @@
     position: relative;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .klients__text {

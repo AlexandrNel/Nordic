@@ -53,3 +53,18 @@ const swiper = new Swiper('.swiper', {
     document.querySelector('#slider-slide4 .slider__image').classList.remove("slider__image--border")
   })
  
+
+  
+
+  const func1 = () => {
+    const valueOfPersons = document.getElementById("number-of-persons").value;
+    let valueOfSpan = document.getElementById("value-number-of-persons");
+    valueOfSpan.innerHTML = valueOfPersons
+  
+  
+    // console.log(`Value: ${valueOfPersons}`)
+    // console.log(`Span: ${valueOfSpan}`)
+  }
+
+  document.getElementById("number-of-persons").addEventListener('mousemove', func1)
+  document.getElementById("number-of-persons").addEventListener('click', func1)

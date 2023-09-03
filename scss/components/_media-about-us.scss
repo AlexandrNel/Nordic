@@ -16,7 +16,7 @@
     }
     &__wrapper{
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         position: relative;
         
 
@@ -28,9 +28,6 @@
         bottom: 0px;
     }
     p.title{
-        position: absolute;
-        left: 0;
-        top: 0;
         color: #fff;
     }
     .swiper {
