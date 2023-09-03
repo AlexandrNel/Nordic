@@ -703,15 +703,18 @@ button {
   padding: 14px 24px;
   border-radius: 50px;
   background-color: rgba(84, 94, 118, 0.1215686275);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .feedback__event-format-buttons button.button--secondary {
   background-color: #222733;
   color: #fff;
 }
-.feedback__event-format-buttons button:hover, .feedback__event-format-buttons button:active {
+.feedback__event-format-buttons button:hover {
   background-color: #222733;
   color: #fff;
+}
+.feedback__event-format-buttons button:active {
+  background-color: #4b5670;
 }
 .feedback .feedback_button {
   gap: 44px;
@@ -804,7 +807,7 @@ button {
 .feedback__price-first-block {
   margin-bottom: 28px;
 }
-.feedback__price-first-block p {
+.feedback__price-first-block p.price-of-event {
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 12px;

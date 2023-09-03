@@ -68,3 +68,64 @@ const swiper = new Swiper('.swiper', {
 
   document.getElementById("number-of-persons").addEventListener('mousemove', func1)
   document.getElementById("number-of-persons").addEventListener('click', func1)
+
+  document.getElementById('date').valueAsDate = new Date();
+
+
+
+// Choosing the format of the event
+
+ const buffet = document.getElementById('buffet')
+ const gastronomic_dinner = document.getElementById('gastronomic-dinner')
+ const banquet = document.getElementById('banquet')
+ let format_of_event = document.getElementById('format-of-event')
+
+
+
+function eventFormat(event, event1, event2){
+  format_of_event.innerHTML = event.innerHTML
+  event.classList.toggle('button--secondary')
+  if (event.classList.contains('button--secondary')){
+    format_of_event.innerHTML = event.innerHTML
+  } else {
+    format_of_event.innerHTML = ""
+  }
+  if (event.classList.contains('button--secondary') & (event1.classList.contains('button--secondary') || event2.classList.contains('button--secondary'))){
+    event1.classList.remove('button--secondary')
+    event2.classList.remove('button--secondary')
+  }
+} 
+
+buffet.addEventListener('click', function(){
+eventFormat(buffet, gastronomic_dinner, banquet)
+})
+gastronomic_dinner.addEventListener('click', function(){
+  eventFormat(gastronomic_dinner, buffet, banquet)
+})
+banquet.addEventListener('click', function(){
+  eventFormat(banquet, gastronomic_dinner, buffet)
+})
+
+// ======================================================
+
+
+// Event cost verification
+
+
+let price_per_person = document.getElementById('price-per-person')
+
+banquet.addEventListener('click', function(){
+  if (banquet.classList.contains('button--secondary'))
+  {price_per_person.innerHTML = "5 000"}
+ else {price_per_person.innerHTML = "0"}
+  })
+  gastronomic_dinner.addEventListener('click', function(){
+    if (gastronomic_dinner.classList.contains('button--secondary'))
+    {price_per_person.innerHTML = "3 000"}
+    else{price_per_person.innerHTML = "0"}
+  })
+  buffet.addEventListener('click', function(){
+    if (buffet.classList.contains('button--secondary'))
+    {price_per_person.innerHTML = "4 000"}
+    else {price_per_person.innerHTML = "0"}
+  })
