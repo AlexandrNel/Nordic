@@ -170,3 +170,7 @@ dotFirst.addEventListener('click', function(){
     document.getElementById('feedback-form-second-block').classList.add('disable')
   } else {console.log("It's good")}
 })
+
+document.getElementById('feedback-btn').addEventListener('click', function(){
+  dotFirst
+})
