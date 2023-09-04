@@ -182,11 +182,21 @@ h2.title--white {
   width: 280px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #4b5670;
 }
 
 .button.button--secondary {
   background-color: #222733;
   color: #fff;
+}
+
+.button.button--secondary:hover {
+  background-color: #4b5670;
 }
 
 button {
@@ -197,7 +207,7 @@ button {
   display: none;
 }
 
-.feedback .range-input__wrapper__line, .feedback .feedback_button, .about__stat, .about__description, .header__request, .header__blocks, .nav__main ul, .nav__main, .nav__top {
+.footer__images, .footer__links, .footer__nav, .feedback .range-input__wrapper__line, .feedback .feedback_button, .about__stat, .about__description, .header__request, .header__blocks, .nav__main ul, .nav__main, .nav__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1038,4 +1048,22 @@ button {
 
 #price-of-event {
   opacity: 1;
+}
+
+.footer {
+  padding: 49px 0;
+}
+.footer__nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__links {
+  gap: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 80%;
+}
+.footer__images {
+  gap: 20px;
 }

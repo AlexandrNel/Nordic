@@ -74,11 +74,20 @@ h2.title--white {
     font-family: 'Lab Grotesque';
     width: 280px;
     flex-shrink: 0;
+
+    transition: all .2s ease-in-out;
+}
+
+.button:hover {
+    background-color: lighten($font-color, 20%);
 }
 
 .button.button--secondary {
     background-color: $secondary-color;
     color: #fff;
+}
+.button.button--secondary:hover {
+    background-color: lighten($font-color, 20%);
 }
 
 button {

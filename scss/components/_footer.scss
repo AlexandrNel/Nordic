@@ -1,0 +1,27 @@
+.footer {
+    padding: 49px 0;
+
+    &__nav {
+        @extend %flex;
+        justify-content: space-between
+    }
+    &__links {
+        @extend %flex;
+        gap: 40px;
+
+        font-size: 14px;
+        font-weight: 400;
+
+        opacity: 80%;
+    }
+    &__images{
+        @extend %flex;
+        gap: 20px;
+    }
+    &__text {
+
+    }
+    &__img {
+
+    }
+}

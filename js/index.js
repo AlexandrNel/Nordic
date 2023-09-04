@@ -171,6 +171,8 @@ dotFirst.addEventListener('click', function(){
   } else {console.log("It's good")}
 })
 
-document.getElementById('feedback-btn').addEventListener('click', function(){
-  dotFirst
+document.getElementById('feedback_btn').addEventListener('click', function(){
+  document.getElementById('feedback-form-first-block').classList.add('disable')
+  document.getElementById('feedback-form-second-block').classList.remove('disable')
+  dotSecond.classList.add('feedback__dot--active')
 })
