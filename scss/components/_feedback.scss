@@ -1,6 +1,44 @@
+
+ .dot {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #545E761F;
+    border-radius: 50%;
+    font-family: 'Lab Grotesque';
+    }
+.feedback__dot.feedback__dot--active {
+    color: rgb(34, 39, 51);
+}
+.feedback__dot--active {
+    .dot{
+        background-color: rgb(34, 39, 51);
+        color: #fff;
+    }
+}
+
 .feedback {
     padding: 140px 0 160px 0;
     background-color: #F3F5F8;
+
+
+    &__dots {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+    &__dot {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: rgba(34, 39, 51, 0.5);
+        font-size: 20px;
+        font-weight: 500;
+    }
+   
 
     &__form-wrapper {
         display: flex;

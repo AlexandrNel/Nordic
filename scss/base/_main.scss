@@ -29,6 +29,9 @@ html{
     font-size: 20px;
     font-weight: 300;
 }
+.input::placeholder{
+    color: $font-color;
+}
 
 p.title {
     font-size: 1.4rem;
@@ -80,4 +83,8 @@ h2.title--white {
 
 button {
     font-family: 'Lab Grotesque';
+}
+
+.disable {
+    display: none;
 }

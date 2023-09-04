@@ -92,6 +92,8 @@ const swiper = new Swiper('.swiper', {
     // console.log(`Span: ${valueOfSpan}`)
   }
 
+  let NumberOfPersons = document.getElementById("number-of-persons").value;
+
   document.getElementById("number-of-persons").addEventListener('mousemove', func1)
   document.getElementById("number-of-persons").addEventListener('click', func1)
 
@@ -145,3 +147,26 @@ banquet.addEventListener('click', function(){
   eventCostCheck(banquet, priceOfBanquet)
 })
 
+
+
+let dotSecond = document.getElementById('dotSecond')
+let dotFirst = document.getElementById('dotFirst')
+
+dotSecond.addEventListener('click', function(){
+  dotSecond.classList.add('feedback__dot--active')
+  if (dotSecond.classList.contains('feedback__dot--active'))
+  {document.getElementById('feedback-form-second-block').classList.remove('disable')}
+  else {document.getElementById('feedback-form-second-block').classList.add('disable')}
+  
+  if (dotSecond.classList.contains('feedback__dot--active')){
+    document.getElementById('feedback-form-first-block').classList.add('disable')
+  } else {document.getElementById('feedback-form-first-block').classList.remove('disable')}
+})
+
+dotFirst.addEventListener('click', function(){
+  if (dotSecond.classList.contains('feedback__dot--active')){
+    dotSecond.classList.remove('feedback__dot--active')
+    document.getElementById('feedback-form-first-block').classList.remove('disable')
+    document.getElementById('feedback-form-second-block').classList.add('disable')
+  } else {console.log("It's good")}
+})

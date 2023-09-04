@@ -302,7 +302,16 @@
     </section>
     <section class="feedback">
         <div class="container">
-            <div class="feedback__dots"></div>
+            <div class="feedback__dots">
+                <div id="dotFirst" class="feedback__dot feedback__dot--active enable">
+                    <div class="dot">1</div>
+                    <p>Мероприятие</p>
+                </div>
+                <div id="dotSecond" class="feedback__dot">
+                    <div class="dot">2</div>
+                    <p>Контакты</p>
+                </div>
+            </div>
             <div class="feedback__form">
                 <form action="">
                     <div id="feedback-form-first-block">
@@ -342,7 +351,7 @@
                                 </div>
                                 <div class="input">
                                     <ul>
-                                        <li><label for="additional-services">Дополнитеьлные услуги:</label></li>
+                                        <li><label for="additional-services">Дополнительные услуги:</label></li>
                                         <li><select name="additional-services" id="additional-services">
                                             <option value="">Тематические станции</option>
                                             <option value="">Декор</option>
@@ -352,6 +361,41 @@
                                 <input type="text" class="input" placeholder="Напишите пожелания по меню">
                                 <div class="feedback_button">
                                     <button class="button button--secondary" type="button" id="feedback_btn">Продолжить</button>
+                                    <p>Нажимая кнопку вы соглашаетесь с <a href="#!">условиями обработки персональных данных</a> и <a href="#!">политикой конфиденциальности</a> </p>
+                                </div>
+                            </div>
+
+                            <div class="feedback__price">
+                                <span>Примерная стоимость:</span>
+                                <div class="feedback__price-first-block">
+                                    <p class="price-of-event"><span id="price-of-event">150 000</span> ₽</p>
+                                    <p class="price-per-person"><span id="price-per-person">5000</span> ₽/чел</p>
+                                </div>
+                                <div class="feedback__price-second-block">
+                                    <ul>
+                                        <li>Формат:<span  id="format-of-event">Фуршет</span></li>
+                                        <li>Количество гостей:<span  id="guest-number-of-event">20</span></li>
+                                        <li>Дата:<span  id="date-of-event">20.04.23</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="feedback-form-second-block" class="disable">
+                        <h3 class="feedback__form-title">Расскажите о себе</h3>
+                            
+                        <div class="feedback__form-wrapper">
+
+
+                            <div class="feedback-form-first-block">
+                               
+                                <input class="input" type="text" name="first-name" id="firstName" placeholder="Ваше имя">
+                                
+                                <input class="input" type="tel" maxlength="15"  placeholder="Мобильный телефон">
+                                <input class="input" type="email" name="" id="" placeholder="Электронная почта">
+                                <div class="feedback_button">
+                                    <button class="button button--secondary" type="submit" id="feedback_btn_submit">Отправить заявку</button>
                                     <p>Нажимая кнопку вы соглашаетесь с <a href="#!">условиями обработки персональных данных</a> и <a href="#!">политикой конфиденциальности</a> </p>
                                 </div>
                             </div>

@@ -120,6 +120,10 @@ html {
   font-weight: 300;
 }
 
+.input::placeholder {
+  color: #222733;
+}
+
 p.title {
   font-size: 1.4rem;
   font-weight: 400;
@@ -168,6 +172,10 @@ h2.title--white {
 
 button {
   font-family: "Lab Grotesque";
+}
+
+.disable {
+  display: none;
 }
 
 .feedback .range-input__wrapper__line, .feedback .feedback_button, .about__stat, .about__description, .header__request, .header__blocks, .nav__main ul, .nav__main, .nav__top {
@@ -669,9 +677,42 @@ button {
   font-weight: bold;
 }
 
+.dot {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(84, 94, 118, 0.1215686275);
+  border-radius: 50%;
+  font-family: "Lab Grotesque";
+}
+
+.feedback__dot.feedback__dot--active {
+  color: rgb(34, 39, 51);
+}
+
+.feedback__dot--active .dot {
+  background-color: rgb(34, 39, 51);
+  color: #fff;
+}
+
 .feedback {
   padding: 140px 0 160px 0;
   background-color: #F3F5F8;
+}
+.feedback__dots {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+.feedback__dot {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: rgba(34, 39, 51, 0.5);
+  font-size: 20px;
+  font-weight: 500;
 }
 .feedback__form-wrapper {
   display: flex;
