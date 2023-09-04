@@ -1,3 +1,31 @@
+const slider_slide1 = document.getElementById('slider-slide1')
+const slider_slide2 = document.getElementById('slider-slide2')
+const slider_slide3 = document.getElementById('slider-slide3')
+const slider_slide4 = document.getElementById('slider-slide4')
+
+// Choosing the format of the event
+
+const buffet = document.getElementById('buffet')
+const gastronomic_dinner = document.getElementById('gastronomic-dinner')
+const banquet = document.getElementById('banquet')
+let format_of_event = document.getElementById('format-of-event')
+
+// Event cost verification
+
+
+let priceOfBuffet = 5000;
+let priceOfGastronomic_dinner = 4000;
+let priceOfBanquet = 3000;
+
+let price_per_person = document.getElementById('price-per-person')
+
+const valueOfPersons = document.getElementById("number-of-persons").value;
+let valueOfSpan = document.getElementById("value-number-of-persons");
+
+let personsNumberOfEvent = document.getElementById('guest-number-of-event')
+
+
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -11,10 +39,7 @@ const swiper = new Swiper('.swiper', {
   });
   
 
-  const slider_slide1 = document.getElementById('slider-slide1')
-  const slider_slide2 = document.getElementById('slider-slide2')
-  const slider_slide3 = document.getElementById('slider-slide3')
-  const slider_slide4 = document.getElementById('slider-slide4')
+
 
   slider_slide1.addEventListener('mouseover', function(){     
   document.querySelector('#slider-slide1 .slider__text').classList.add("slider__text--margin")
@@ -59,8 +84,9 @@ const swiper = new Swiper('.swiper', {
   const func1 = () => {
     const valueOfPersons = document.getElementById("number-of-persons").value;
     let valueOfSpan = document.getElementById("value-number-of-persons");
+    let personsNumberOfEvent = document.getElementById('guest-number-of-event')
     valueOfSpan.innerHTML = valueOfPersons
-  
+    personsNumberOfEvent.innerHTML = valueOfPersons
   
     // console.log(`Value: ${valueOfPersons}`)
     // console.log(`Span: ${valueOfSpan}`)
@@ -74,13 +100,6 @@ const swiper = new Swiper('.swiper', {
 
 
 // Choosing the format of the event
-
- const buffet = document.getElementById('buffet')
- const gastronomic_dinner = document.getElementById('gastronomic-dinner')
- const banquet = document.getElementById('banquet')
- let format_of_event = document.getElementById('format-of-event')
-
-
 
 function eventFormat(event, event1, event2){
   format_of_event.innerHTML = event.innerHTML
@@ -111,21 +130,18 @@ banquet.addEventListener('click', function(){
 
 // Event cost verification
 
-
-let price_per_person = document.getElementById('price-per-person')
-
-banquet.addEventListener('click', function(){
-  if (banquet.classList.contains('button--secondary'))
-  {price_per_person.innerHTML = "5 000"}
+function eventCostCheck(event, cost){
+  if (event.classList.contains('button--secondary'))
+  {price_per_person.innerHTML = cost}
  else {price_per_person.innerHTML = "0"}
-  })
-  gastronomic_dinner.addEventListener('click', function(){
-    if (gastronomic_dinner.classList.contains('button--secondary'))
-    {price_per_person.innerHTML = "3 000"}
-    else{price_per_person.innerHTML = "0"}
-  })
-  buffet.addEventListener('click', function(){
-    if (buffet.classList.contains('button--secondary'))
-    {price_per_person.innerHTML = "4 000"}
-    else {price_per_person.innerHTML = "0"}
-  })
+}
+buffet.addEventListener('click', function(){
+  eventCostCheck(buffet, priceOfBuffet)
+})
+gastronomic_dinner.addEventListener('click', function(){
+  eventCostCheck(gastronomic_dinner, priceOfGastronomic_dinner)
+})
+banquet.addEventListener('click', function(){
+  eventCostCheck(banquet, priceOfBanquet)
+})
+
