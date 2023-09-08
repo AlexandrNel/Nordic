@@ -17,12 +17,48 @@ let priceOfBuffet = 5000;
 let priceOfGastronomic_dinner = 4000;
 let priceOfBanquet = 3000;
 
+
+// Общая цена мероприятия
+let price_of_event = document.getElementById('price-of-event') 
+
+// Цена за человека
 let price_per_person = document.getElementById('price-per-person')
 
+// Количество выбранных людей
 const valueOfPersons = document.getElementById("number-of-persons").value;
+
+// [INFO]Количество гостей в форме
 let valueOfSpan = document.getElementById("value-number-of-persons");
 
-let personsNumberOfEvent = document.getElementById('guest-number-of-event')
+// [INFO]Количество гостей в блоке "Примерная цена"
+
+
+
+// Примерная стоимость 
+
+/* Общая стоимость мероприятия = price_of_event*/ 
+/* Цена за человека =            price_per_person*/ 
+// Формат =                      format-of-event
+//      Буфет =                  priceOfBuffet - 5000р;
+//      Гастрономическая кухня = priceOfGastronomic_dinner - 4000р;
+//      Банкет =                 priceOfBanquet - 3000р;
+// Кол-во гостей =               personsNumberOfEvent
+// Дата =                        dateOfEvent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -94,8 +130,11 @@ const swiper = new Swiper('.swiper', {
 
   let NumberOfPersons = document.getElementById("number-of-persons").value;
 
-  document.getElementById("number-of-persons").addEventListener('mousemove', func1)
-  document.getElementById("number-of-persons").addEventListener('click', func1)
+  document.getElementById("number-of-persons").addEventListener('mousemove', function(){
+    func1()
+    calculator()
+  })
+  // document.getElementById("number-of-persons").addEventListener('click', func1)
 
   document.getElementById('date').valueAsDate = new Date();
 
@@ -139,12 +178,15 @@ function eventCostCheck(event, cost){
 }
 buffet.addEventListener('click', function(){
   eventCostCheck(buffet, priceOfBuffet)
+  calculator()
 })
 gastronomic_dinner.addEventListener('click', function(){
   eventCostCheck(gastronomic_dinner, priceOfGastronomic_dinner)
+  calculator()
 })
 banquet.addEventListener('click', function(){
   eventCostCheck(banquet, priceOfBanquet)
+  calculator()
 })
 
 
@@ -168,11 +210,52 @@ dotFirst.addEventListener('click', function(){
     dotSecond.classList.remove('feedback__dot--active')
     document.getElementById('feedback-form-first-block').classList.remove('disable')
     document.getElementById('feedback-form-second-block').classList.add('disable')
-  } else {console.log("It's good")}
+  } 
 })
 
 document.getElementById('feedback_btn').addEventListener('click', function(){
   document.getElementById('feedback-form-first-block').classList.add('disable')
   document.getElementById('feedback-form-second-block').classList.remove('disable')
   dotSecond.classList.add('feedback__dot--active')
+})
+
+
+
+
+let personsNumberOfEvent = document.getElementById('guest-number-of-event')
+let dateOfEvent = document.getElementById('date-of-event')
+const date = document.getElementById('date')
+
+function getDate(){
+  dateOfEvent.innerHTML = date.value
+}
+getDate()
+
+date.addEventListener('click', function(){
+  getDate()
+})
+document.querySelector('body').addEventListener('click', function(){
+  getDate()
+})
+
+
+
+// Calculator
+function calculator(){
+  price_of_event.innerHTML = price_per_person.innerHTML * personsNumberOfEvent.innerHTML
+}
+
+
+
+
+
+const inputDopService = document.querySelector('.dop-service')
+console.log(inputDopService)
+inputDopService.addEventListener('mouseover', function(){
+ let notWorked = document.querySelector('.not-worked')
+ notWorked.style.display = 'block'
+})
+inputDopService.addEventListener('mouseout', function(){
+ let notWorked = document.querySelector('.not-worked')
+ notWorked.style.display = 'none'
 })
