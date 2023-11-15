@@ -314,7 +314,7 @@
                 </div>
             </div>
             <div class="feedback__form">
-                <form action="">
+                <form action="send.php" method="post" >
                     <div id="feedback-form-first-block">
                         <h3 class="feedback__form-title">Расскажите о мероприятии</h3>
                             
@@ -360,7 +360,7 @@
                                         <p>Приносим свои извинения</p>
                                     </div>
                                 </div>
-                                <input type="text" class="input" placeholder="Напишите пожелания по меню">
+                                <input type="text" class="input" name="wishes" id="wishes" placeholder="Напишите пожелания по меню">
                                 <div class="feedback_button">
                                     <button class="button button--secondary" type="button" id="feedback_btn">Продолжить</button>
                                     <p>Нажимая кнопку вы соглашаетесь с <a href="#!">условиями обработки персональных данных</a> и <a href="#!">политикой конфиденциальности</a> </p>
@@ -378,8 +378,8 @@
                                
                                 <input class="input" type="text" name="first-name" id="firstName" placeholder="Ваше имя">
                                 
-                                <input class="input" type="tel" maxlength="15"  placeholder="Мобильный телефон">
-                                <input class="input" type="email" name="" id="" placeholder="Электронная почта">
+                                <input class="input" type="tel" name="phone" id="phone" maxlength="15"  placeholder="Мобильный телефон">
+                                <input class="input" type="email" name="email" id="email" placeholder="Электронная почта">
                                 <div class="feedback_button">
                                     <button class="button button--secondary" type="submit" id="feedback_btn_submit">Отправить заявку</button>
                                     <p>Нажимая кнопку вы соглашаетесь с <a href="#!">условиями обработки персональных данных</a> и <a href="#!">политикой конфиденциальности</a> </p>
