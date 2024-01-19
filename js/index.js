@@ -259,3 +259,8 @@ inputDopService.addEventListener('mouseout', function(){
  let notWorked = document.querySelector('.not-worked')
  notWorked.style.display = 'none'
 })
+
+const buttonLink = document.querySelector('.button')
+buttonLink.addEventListener('click', () => {
+document.querySelector('.feedback').scrollIntoView({behavior: 'smooth', block: 'center'})
+})
